@@ -2,7 +2,7 @@ import HTMLTag from "./HTMLTag";
 
 function Us() {
   return (
-    <section data-aos="fade" data-aos-duration="1000" className="flex bg-gradient-to-b to-[#df6c0d] via-[#df6c0dee] from-[#df6c0dbe] text-white px-[8vw] h-screen items-center justify-center text-center">
+    <section data-aos="fade" data-aos-duration="1000" className="flex px-[8vw] text-slate-600 h-screen items-center justify-center text-center">
     <div data-aos="zoom-out" data-aos-duration="1500">
       <div>
       <p data-aos="fade-right" className="text-4xl font-bold monoton">ABOUT</p>

@@ -1,11 +1,11 @@
-import { GridBackgroundDemo } from "@/components/gribBackground";
+import Intro from "@/components/intro";
 import Us from "@/components/us";
 
 
 export default function Home() {
   return (
     <main className="">
-      <GridBackgroundDemo />
+               <Intro />
       <Us />
     </main>
   );
