@@ -27,6 +27,18 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      backgroundColor: {
+        accent: 'var(--color-accent)',
+      },
+      textColor: {
+        accent: 'var(--color-accent)',
+      },
+      fill: {
+        accent: 'var(--color-accent)',
+      },
+      stroke:{
+        accent: 'var(--color-accent)'
+      }
     },
   },
   plugins: [
