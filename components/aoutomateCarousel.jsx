@@ -27,6 +27,10 @@ function AutomateCarousel() {
     { logo: <SiMysql className="w-12 h-12"/> },
     { logo: <SiPostgresql className="w-12 h-12"/> },
     { logo: <TbBrandCSharp className="w-12 h-12"/> },
+    { logo: <FaReact className="w-12 h-12"/> },
+    { logo: <FaNodeJs className="w-12 h-12"/> },
+    { logo: <IoServerOutline className="w-12 h-12"/> },
+    { logo: <SiGraphql className="w-12 h-12"/> },
   ];
   return (
     <div className="">
@@ -62,10 +66,10 @@ function AutomateCarousel() {
         }
         @keyframes "bannermove" {
           0% {
-            margin-left: -240px;
+            margin-left: -140px;
           }
           100% {
-            margin-left: -2320px;
+            margin-left: -1720px;
           }
         }
         @-moz-keyframes bannermove {
