@@ -7,8 +7,8 @@ export default function HTMLTag() {
   const [percent2, setPercent2] = useState(158)
 
   const { scrollYProgress } = useViewportScroll()
-  const yRange1 = useTransform(scrollYProgress, [0.55, 0.77], [100, 0])
-  const yRange2 = useTransform(scrollYProgress, [0.55, 0.77], [158, 0])
+  const yRange1 = useTransform(scrollYProgress, [0.66, 0.77], [100, 0])
+  const yRange2 = useTransform(scrollYProgress, [0.66, 0.77], [158, 0])
   useEffect(() => {
     yRange1.onChange((v) => {
       setPercent1(Math.trunc(yRange1.current))
@@ -19,26 +19,26 @@ export default function HTMLTag() {
   return (
     <motion.svg
       viewBox="0 0 90 72"
-      className={`w-[25vw] max-w-[180px] ${percent1===0?"fill-[#ffffff]":"fill-[transparent]"} transition-all duration-1000`}
+      className={`w-[25vw] max-w-[280px] ${percent1===0?"fill-accent":"fill-[transparent]"} transition-all duration-1000`}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M15.8 52.2959L0.375977 37.5759L15.8 22.9199H23.16L7.67198 37.5759L23.16 52.2959H15.8Z"
-        className="html-path stroke-[#ffffff]"
+        className="html-path stroke-accent"
         strokeWidth="1"
         strokeDasharray="100"
         strokeDashoffset={percent1}
       />
       <path
         d="M57.188 0.711914L39.652 71.8799H33.892L51.364 0.711914H57.188Z"
-        className="html-path stroke-[#ffffff]"
+        className="html-path stroke-accent"
         strokeWidth="1"
         strokeDasharray="158"
         strokeDashoffset={percent2}
       />
       <path
         d="M66.9535 22.9199H74.3135L89.8015 37.5759L74.3135 52.2959H66.9535L82.4415 37.5759L66.9535 22.9199Z"
-        className="html-path stroke-[#ffffff]"
+        className="html-path stroke-accent"
         strokeWidth="1"
         strokeDasharray="100"
         strokeDashoffset={percent1}
