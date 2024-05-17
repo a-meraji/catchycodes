@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body  className={cn(
-          "font-sans antialiased",
+          "font-sans overflow-x-hidden antialiased",
           fontSans.variable
         )}>
           <AOSInit/>
