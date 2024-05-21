@@ -10,11 +10,11 @@ export default function ServiceDetail(props) {
   const isOdd = i % 2 == 0;
   return (
     <div
-      className={`flex items-center ${
+      className={`flex lg:flex-row flex-col gap-4 lg:gap-0 items-center ${
         isOdd ? "flex-row-reverse" : ""
       }  justify-between`}
     >
-      <div className="flex flex-col gap-3 w-1/2">
+      <div className="flex flex-col gap-3 lg:w-1/2">
         <div
           data-aos={isOdd ? "fade-right" : "fade-left"}
           className="font-black text-3xl"

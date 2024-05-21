@@ -1,4 +1,6 @@
+import AboutUs from "@/components/AboutUs";
 import AllServiceDetail from "@/components/AllServiceDetail";
+import Footer from "@/components/Footer";
 import ServiceDetail from "@/components/ServiceDetail";
 import AutomateCarousel from "@/components/aoutomateCarousel";
 import Intro from "@/components/intro";
@@ -13,6 +15,8 @@ export default function Home() {
       <AutomateCarousel />
       <Services />
       <AllServiceDetail />
+      <AboutUs />
+      <Footer />
     </main>
   );
 }

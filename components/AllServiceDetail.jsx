@@ -4,7 +4,7 @@ import ServiceDetail from "./ServiceDetail";
 
 export default function AllServiceDetail() {
   return (
-    <div className="flex flex-col gap-4 px-[10vw]">
+    <div className="flex flex-col lg:gap-4 gap-8">
       {allServices.map((ele, i) => (
         <ServiceDetail {...ele} key={i} i={i} />
       ))}

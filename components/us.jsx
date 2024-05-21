@@ -5,7 +5,7 @@ function Us() {
     <section
       data-aos="fade"
       data-aos-duration="1000"
-      className="flex px-[8vw] text-slate-600 h-screen items-center justify-center text-center"
+      className="flex lg:flex-row flex-col gap-4 mt-8 lg:gap-0 lg:mt-0 text-slate-600 h-screen items-center justify-center text-center"
     >
       <div data-aos="zoom-out" data-aos-duration="1500" className="w-full">
         <div>
