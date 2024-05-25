@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutUs() {
   return (
-    <div className="flex  flex-col md:flex-row justify-between items-center">
+    <div className="flex lg:mx-[10vw] mx-4 flex-col md:flex-row justify-between items-center">
       <div data-aos={"fade-left"} className="text-left lg:w-1/3">
         <h1 className="text-4xl max-w-64 font-bold mb-4">
           We are built Differently & Exceptionally
@@ -13,9 +13,7 @@ export default function AboutUs() {
           since 2023.
         </p>
         <p className="text-base mb-4">
-          Our services range from application development to advanced algorithm
-          design, focusing on delivering quality results tailored to our
-          clients' needs.
+         {"Our services range from application development to advanced algorithmdesign, focusing on delivering quality results tailored to ourclients' needs."}
         </p>
       </div>
       <img
@@ -31,9 +29,7 @@ export default function AboutUs() {
           <span className="text-5xl font-bold">23+</span>
           <span className="text-lg mt-2">Software Development Expertise</span>
           <span className="text-base text-center mt-2">
-            We've successfully completed over 23 projects by utilizing
-            cutting-edge technologies, ensuring effective and valuable solutions
-            for our clients
+            {"We've successfully completed over 23 projects by utilizingcutting-edge technologies, ensuring effective and valuable solutions for our clients"}
           </span>
         </div>
         <div className="flex flex-col items-center">

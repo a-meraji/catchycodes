@@ -5,7 +5,7 @@ function Us() {
     <section
       data-aos="fade"
       data-aos-duration="1000"
-      className="flex lg:flex-row flex-col gap-4 mt-8 lg:gap-0 lg:mt-0 text-slate-600 h-screen items-center justify-center text-center"
+      className="flex lg:mx-[10vw] mx-4 lg:flex-row flex-col gap-4 mt-8 lg:gap-0 lg:mt-0 text-slate-600 h-screen items-center justify-center text-center"
     >
       <div data-aos="zoom-out" data-aos-duration="1500" className="w-full">
         <div>
@@ -22,9 +22,9 @@ function Us() {
           </p>
         </div>
       </div>
-      <div className="w-full flex items-center justify-center">
+      {/* <div className="w-full flex items-center justify-center">
             <HTMLTag />
-          </div>
+          </div> */}
     </section>
   );
 }

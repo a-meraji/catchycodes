@@ -10,7 +10,7 @@ export default function Home() {
       <Us />
       <AutomateCarousel />
       <Services />
-      <div className="flex items-center px-[10vw] justify-between">
+      {/* <div className="flex items-center px-[10vw] justify-between">
         <div className="flex flex-col gap-3 w-2/3">
           <div className="font-black text-3xl">
             Custom Web Application Development
@@ -23,7 +23,7 @@ export default function Home() {
           </div>
         </div>
         <img src="https://www.thinkcompany.com/wp-content/uploads/2023/02/services-graphic-light-500x487.png" />
-      </div>
+      </div> */}
     </main>
   );
 }

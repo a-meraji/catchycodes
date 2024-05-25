@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Services() {
   return (
-    <div className="flex lg:flex-row flex-col text-black z-20  mt-20 items-center justify-between">
+    <div className="flex lg:flex-row flex-col text-black z-20 lg:mx-[10vw] mx-4  mt-20 items-center justify-between">
       <div className="flex flex-col gap-8 lg:items-start items-center max-w-[60rem]">
         <div data-aos="fade-right" className="text-lg  font-bold">
           services

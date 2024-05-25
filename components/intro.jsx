@@ -1,7 +1,7 @@
 "use client"
 function Intro() {
   return (
-    <div className="text-center flex flex-col items-center ">
+    <div className="text-center flex flex-col items-center lg:mx-[10vw] mx-4">
       <div
         data-aos="fade-up"
       data-aos-duration="600"
