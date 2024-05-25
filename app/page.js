@@ -11,12 +11,13 @@ export default function Home() {
   return (
     <main className="">
       <Intro />
-      <Us />
+       <Us />
       <AutomateCarousel />
       <Services />
       <AllServiceDetail />
       <AboutUs />
-      <Footer />
+      <Footer /> 
+     
     </main>
   );
 }

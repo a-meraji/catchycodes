@@ -11,20 +11,20 @@ export default function ServiceDetail(props) {
 
   return (
     <div
-      className={`flex lg:flex-row flex-col gap-4 lg:gap-0 items-center ${
+      className={`flex mt-20 lg:flex-row flex-col gap-6 lg:gap-0 items-center ${
         i % 2 == 0 ? "lg:flex-row-reverse" : ""
       }  justify-between`}
     >
-      <div className="flex flex-col gap-3 lg:w-1/2">
+      <div className="flex flex-col gap-6 lg:w-1/2">
         <div
           data-aos={i % 2 == 0 ? "fade-right" : "fade-left"}
-          className="font-black text-3xl"
+          className="font-black text-2xl lg:text-3xl"
         >
           {title}
         </div>
         <div
           data-aos={i % 2 == 0 ? "fade-right" : "fade-left"}
-          className="font-medium text-lg leading-[28px]"
+          className="font-medium text-lg lg:text-xl text-slate-600"
         >
           {subTitle}
         </div>

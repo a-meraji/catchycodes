@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="orange-glass  mt-4 lg:mt-0">
+    <div className="orange-glass  mt-10 lg:mt-20">
       <div className="footer-shadow-inner flex flex-col gap-2 lg:gap-0  items-center pt-4 text-white">
         <div className="flex flex-col pb-2  pt-4  text-center  lg:flex-row lg:gap-24">
           <div>

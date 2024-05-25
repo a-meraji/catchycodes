@@ -1,20 +1,22 @@
-"use client"
+"use client";
 function Intro() {
   return (
-    <div className="text-center flex flex-col items-center lg:mx-[10vw] mx-4">
+    <div className="text-center flex flex-col justify-center items-center mt-[25vh] lg:mx-[10vw] mx-4">
+      <div>
       <div
         data-aos="fade-up"
-      data-aos-duration="600"
-        className="relative mt-[20vh] flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:translate-x-1/2 before:right-1/2 before:rounded-full before:bg-gradient-radial before:from-[#ffe6d7c2] before:to-transparent before:blur-2xl before:content-[''] z-[1]"
+        data-aos-duration="600"
+        className="relative mt-20 flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:translate-x-1/2 before:right-1/2 before:rounded-full before:bg-gradient-radial before:from-[#ffe6d7c2] before:to-transparent before:blur-2xl before:content-[''] z-[1]"
       >
         <h1 className="monoton-regular text-slate-600 lg:text-8xl text-6xl leading-[4rem]">
           CATCHY CODES
         </h1>
       </div>
       <div
-      data-aos="zoom-in-up"
-      data-aos-duration="1000"
-      className="jakarta mt-20 text-2xl text-[#E74C2B]">
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="jakarta mt-20 text-2xl text-[#E74C2B]"
+      >
         Harmonized Digital
       </div>
       <style jsx>
@@ -27,6 +29,8 @@ function Intro() {
           }
         `}
       </style>
+      </div>
+
     </div>
   );
 }
