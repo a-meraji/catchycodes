@@ -34,7 +34,7 @@ function AutomateCarousel() {
   ];
   return (
     <div className="">
-      <div className="animation scrollbar-hide  flex w-full gap-x-10 overflow-scroll ">
+      <div className="animation scrollbar-hide  flex w-full gap-x-10 overflow-scroll bg-[#ff88002f]">
         {peoples.map((people, index) => (
           <div
             key={index}
