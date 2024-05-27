@@ -9,7 +9,7 @@ import Us from "@/components/us";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="text-primary">
       <Intro />
        <Us />
       <AutomateCarousel />

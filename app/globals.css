@@ -39,4 +39,5 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .light {
   --color-accent: #ff9900;
+  --color-primary: #030c1f;
 }

@@ -10,7 +10,15 @@ function Us() {
       <div data-aos-duration="1500" className="w-full">
         <div>
           <p data-aos="fade-right" className="lg:text-6xl text-3xl font-black leading-10">
-            Transforming Technology, Empowering Your Business
+              Transforming
+            <span className="text-accent">
+               Technology
+              </span>
+               , Empowering Your 
+               <span className="text-blue-800">
+
+               Business
+               </span>
           </p>
          
           <p data-aos="fade-left" className="flex items-center lg:text-xl text-slate-600 text-lg mt-10 lg:mt-20">
