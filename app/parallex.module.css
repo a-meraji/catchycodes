@@ -6,7 +6,7 @@
     gap: 2vw;
     padding: 2vw;
     box-sizing: border-box;
-    overflow: clip;
+    overflow: hidden;
     .column{
         position: relative;
         height: 100%;
@@ -20,7 +20,7 @@
             width: 100%;
             position: relative;
             border-radius: 1vw;
-            overflow: clip;
+            overflow: hidden;
             .img{
                 object-fit: cover;
             }

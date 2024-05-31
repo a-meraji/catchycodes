@@ -20,7 +20,7 @@ const images = [
   "12.jpg",
 ]
 
-export default function Parallex() {
+export default function Home() {
   
   const gallery = useRef(null);
   const [dimension, setDimension] = useState({width:0, height:0});
@@ -80,7 +80,6 @@ const Column = ({images, y}) => {
         images.map( (src, i) => {
           return <div key={i} className={styles.imageContainer}>
             <Image 
-            className={styles.img}
               src={`/images/parallex/${src}`}
               alt='image'
               fill
