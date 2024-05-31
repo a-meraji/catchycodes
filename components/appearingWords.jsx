@@ -30,9 +30,8 @@ function AppearingWords({words,hasCostumeStayles=false}) {
 }
 
 const Word = ({ children, range, progress, otherStyles }) => {
-    const opacity = useTransform(progress, range, [0,1]);
+    const opacity = useTransform(progress, range, [0.2,1]);
   return <span  className={`word ${otherStyles}`}>
-      <span className="shadow">{children}</span>
       <motion.span style={{opacity}}>{children}</motion.span>
   </span>
 };

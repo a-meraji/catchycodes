@@ -25,13 +25,13 @@ function Us() {
       opacity: isInView ? 1 : 0,
       transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
     }}
-      className="flex relative lg:mx-[10vw] -mt-16 mx-4 lg:flex-row flex-col gap-4 lg:gap-0 lg:mt-0  min-h-screen items-center justify-center text-center"
+      className=" relative mt-40 lg:mx-[10vw] mx-4 min-h-screen"
     >
-            <div className="w-full absolute scale-[2] top-0 bottom-0 left-0 right-0 opacity-10 flex items-center justify-center">
+            <div className="w-full absolute scale-[4] md:scale-[2] top-0 bottom-0 left-0 right-0 opacity-10 flex items-center justify-center">
             <HTMLTag />
           </div>
       <div>
-        <div className="lg:text-6xl text-3xl font-black leading-10">
+        <div className="lg:text-6xl text-4xl font-black leading-10">
           <AppearingWords words={words} hasCostumeStayles={true} />
         </div>
         <div className=" lg:text-xl text-slate-600 text-lg leading-7 mt-10 lg:mt-20">

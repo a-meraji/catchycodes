@@ -7,8 +7,8 @@ export default function HTMLTag() {
   const [percent2, setPercent2] = useState(158)
 
   const { scrollYProgress } = useViewportScroll()
-  const yRange1 = useTransform(scrollYProgress, [0.035, 0.1], [100, 0])
-  const yRange2 = useTransform(scrollYProgress, [0.035, 0.1], [158, 0])
+  const yRange1 = useTransform(scrollYProgress, [0.065, 0.13], [100, 0])
+  const yRange2 = useTransform(scrollYProgress, [0.065, 0.13], [158, 0])
   useEffect(() => {
     yRange1.onChange((v) => {
       setPercent1(Math.trunc(yRange1.current))
