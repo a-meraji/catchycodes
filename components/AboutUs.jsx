@@ -16,11 +16,7 @@ export default function AboutUs() {
          {"Our services range from application development to advanced algorithmdesign, focusing on delivering quality results tailored to ourclients' needs."}
         </p>
       </div>
-      <img
-        data-aos={"fade-up"}
-        className="lg:w-1/3"
-        src="https://www.thinkcompany.com/wp-content/uploads/2023/02/services-graphic-light-500x487.png"
-      />
+      <img data-aos={"fade-up"} className="lg:w-1/3" src="/images/7.png" />
       <div
         data-aos={"fade-right"}
         className="flex lg:w-1/3 flex-col gap-6 justify-between items-center mt-8 md:mt-0"

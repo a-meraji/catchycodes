@@ -8,8 +8,6 @@ import AutomateCarousel from "@/components/aoutomateCarousel";
 import Intro from "@/components/intro";
 import Services from "@/components/services";
 import Us from "@/components/us";
-import { Transition } from "@/lib/utils";
-import { useState } from "react";
 
 export default function Home() {
   return (

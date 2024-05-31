@@ -29,7 +29,7 @@ export default function ServiceDetail(props) {
           {subTitle}
         </div>
       </div>
-      <img data-aos={i % 2 == 0 ? "fade-left" : "fade-right"} src={image} />
+      <img className="w-96 h-auto rounded-xl" data-aos={i % 2 == 0 ? "fade-left" : "fade-right"} src={image} />
     </div>
 
   );
