@@ -5,20 +5,23 @@ import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import AutomateCarousel from "@/components/aoutomateCarousel";
 import Intro from "@/components/intro";
+import CatchyHead from "@/components/layout/CatchyHead";
 import Services from "@/components/services";
 import Us from "@/components/us";
 
 export default function Home() {
   return (
-    <main className="relative text-primary">
-      <Intro />
-      <Us />
-      <AutomateCarousel />
-      <Services />
-      <AllServiceDetail />
-      <AboutUs />
-      <Footer />
-      <ContactUs />
-    </main>
+    <>
+      <main className="relative text-primary">
+        <Intro />
+        <Us />
+        <AutomateCarousel />
+        <Services />
+        <AllServiceDetail />
+        <AboutUs />
+        <Footer />
+        <ContactUs />
+      </main>
+    </>
   );
 }
