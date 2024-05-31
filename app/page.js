@@ -10,7 +10,7 @@ import Us from "@/components/us";
 
 export default function Home() {
   return (
-    <main className="relative text-primary">
+    <main className="relative text-primary overflow-hidden">
       <Intro />
       <Us />
       <AutomateCarousel />
@@ -18,7 +18,7 @@ export default function Home() {
       <AllServiceDetail />
       <AboutUs />
       <Footer />
-      <ContactUs />
+      <ContactUs /> 
     </main>
   );
 }

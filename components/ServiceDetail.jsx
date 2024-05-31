@@ -1,7 +1,7 @@
-"use client"
-import React, { useEffect, useState } from "react";
+import React from "react";
+import ServiceAnimContainer from "./ServiceAnimContainer";
 
-export default function   ServiceDetail(props) {
+export default function ServiceDetail(props) {
   const {
     title = "Custom Web Application Development",
     subTitle = "Our team specializes in building robust, scalable, and secure web applications tailored to your unique business needs. From initial concept to final deployment, we ensure a seamless development process that aligns with your goals.",
@@ -16,21 +16,18 @@ export default function   ServiceDetail(props) {
       }  justify-between`}
     >
       <div className="flex flex-col gap-6 lg:w-1/2">
-        <div
-          data-aos={i % 2 == 0 ? "fade-right" : "fade-left"}
-          className="font-black text-2xl lg:text-3xl"
-        >
-          {title}
-        </div>
-        <div
-          data-aos={i % 2 == 0 ? "fade-right" : "fade-left"}
-          className="font-medium text-lg lg:text-xl text-slate-600"
-        >
-          {subTitle}
-        </div>
+        <ServiceAnimContainer i={i}>
+          <div className="font-black text-2xl lg:text-3xl">{title}</div>
+        </ServiceAnimContainer>
+        <ServiceAnimContainer i={i}>
+          <div className="font-medium text-lg lg:text-xl text-slate-600">
+            {subTitle}
+          </div>
+        </ServiceAnimContainer>
       </div>
-      <img data-aos={i % 2 == 0 ? "fade-left" : "fade-right"} src={image} />
+      <ServiceAnimContainer i={i + 1}>
+        <img src={image} />
+      </ServiceAnimContainer>
     </div>
-
   );
 }
