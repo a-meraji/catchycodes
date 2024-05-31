@@ -8,14 +8,15 @@ export default function AboutUs() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="flex mt-20 lg:mx-[10vw] mx-4 flex-col gap-8 md:gap-0 md:flex-row justify-between items-center">
-      <ServiceAnimContainer i={1}>
-      <div
-       className="text-left lg:w-1/3">
-        <h1 className="lg:text-6xl text-3xl font-black leading-10 max-w-64 mb-4">
+       <div className="mt-40 mx-4 lg:mx-[10vw]">
+        <h1 className="lg:text-6xl text-3xl font-black leading-10 mb-4">
           We are built Differently & Exceptionally
         </h1>
-        <p className="font-medium text-lg lg:text-xl text-slate-600 mt-4 lg:mt-10">
+    <div className="flex flex-col gap-8 md:gap-0 md:flex-row justify-between items-center">
+      <div
+       className="text-left lg:w-1/3">
+      <ServiceAnimContainer i={1}>
+        <p className="font-medium text-lg lg:text-xl text-slate-600">
           <span className="font-bold">CatchyCodes</span> is a software
           development company specializing in innovative programming solutions
           since 2023.
@@ -23,8 +24,8 @@ export default function AboutUs() {
         <p className="font-medium text-lg lg:text-xl text-slate-600 mt-4">
          {"Our services range from application development to advanced algorithmdesign, focusing on delivering quality results tailored to ourclients' needs."}
         </p>
-      </div>
       </ServiceAnimContainer>
+      </div>
       <motion.img
             ref={ref}
             style={{
@@ -34,10 +35,10 @@ export default function AboutUs() {
         className="lg:w-1/3"
         src="https://www.thinkcompany.com/wp-content/uploads/2023/02/services-graphic-light-500x487.png"
       />
-      <ServiceAnimContainer i={0}>
       <div
         className="flex lg:w-1/3 flex-col gap-6 justify-between items-center mt-8 md:mt-0"
       >
+      <ServiceAnimContainer i={0}>
         <div className="flex flex-col items-center mb-8 md:mb-0 lg:mr-8">
           <span className="text-5xl font-bold">23+</span>
           <span className="font-medium text-xl lg:text-2xl text-slate-600 mt-2">Software Development Expertise</span>
@@ -54,8 +55,8 @@ export default function AboutUs() {
             client base.
           </span>
         </div>
-      </div>
       </ServiceAnimContainer>
-    </div>
+      </div>
+    </div></div>
   );
 }

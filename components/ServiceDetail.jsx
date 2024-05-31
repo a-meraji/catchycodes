@@ -1,5 +1,6 @@
 import React from "react";
 import ServiceAnimContainer from "./ServiceAnimContainer";
+import Image from "next/image";
 
 export default function ServiceDetail(props) {
   const {
@@ -26,7 +27,7 @@ export default function ServiceDetail(props) {
         </ServiceAnimContainer>
       </div>
       <ServiceAnimContainer i={i + 1}>
-        <img src={image} />
+        <Image className="rounded-md" width={300} height={300} src={image} />
       </ServiceAnimContainer>
     </div>
   );
