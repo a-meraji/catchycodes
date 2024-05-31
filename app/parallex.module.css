@@ -1,12 +1,12 @@
 .gallery{
     height: 175vh;
-    background: rgb(45, 45, 45);
+    background: rgb(51, 46, 38);
     position: relative;
     display: flex;
     gap: 2vw;
     padding: 2vw;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: clip;
     .column{
         position: relative;
         height: 100%;
@@ -20,7 +20,7 @@
             width: 100%;
             position: relative;
             border-radius: 1vw;
-            overflow: hidden;
+            overflow: clip;
             .img{
                 object-fit: cover;
             }

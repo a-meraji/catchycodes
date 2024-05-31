@@ -25,7 +25,7 @@ function Us() {
       opacity: isInView ? 1 : 0,
       transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
     }}
-      className=" relative mt-40 lg:mx-[10vw] mx-4 min-h-screen"
+      className=" relative mt-40 lg:mx-[10vw] mx-4 min-h-screen -mb-40 lg:-mb-10"
     >
             <div className="w-full absolute scale-[4] md:scale-[2] top-0 bottom-0 left-0 right-0 opacity-10 flex items-center justify-center">
             <HTMLTag />
