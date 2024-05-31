@@ -1,6 +1,5 @@
 import { Transition } from "@/lib/utils";
 import React, { useState } from "react";
-// import Button from "./ContactUs/Button";
 import { Button } from "@/components/ui/button";
 import {
   Drawer,
@@ -136,7 +135,7 @@ md:px-[25px]"
             <div className="mt-3 h-[120px]"></div>
           </div>
           <DrawerFooter>
-            <Button>Submit</Button>
+            <Button className="bg-blue-700 text-white">Submit</Button>
             <DrawerClose asChild>
               <Button variant="outline">Cancel</Button>
             </DrawerClose>

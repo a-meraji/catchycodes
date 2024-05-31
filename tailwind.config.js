@@ -29,15 +29,19 @@ module.exports = {
       },
       backgroundColor: {
         accent: 'var(--color-accent)',
+        primary:'var(--color-primary)',
       },
       textColor: {
         accent: 'var(--color-accent)',
+        primary:'var(--color-primary)',
       },
       fill: {
         accent: 'var(--color-accent)',
+        primary:'var(--color-primary)',
       },
       stroke:{
-        accent: 'var(--color-accent)'
+        accent: 'var(--color-accent)',
+        primary:'var(--color-primary)',
       }
     },
   },
