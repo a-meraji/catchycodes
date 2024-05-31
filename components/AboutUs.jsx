@@ -36,7 +36,6 @@ export default function AboutUs() {
       />
       <ServiceAnimContainer i={0}>
       <div
-        // data-aos={"fade-right"}
         className="flex lg:w-1/3 flex-col gap-6 justify-between items-center mt-8 md:mt-0"
       >
         <div className="flex flex-col items-center mb-8 md:mb-0 lg:mr-8">
