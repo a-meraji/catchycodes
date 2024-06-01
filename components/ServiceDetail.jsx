@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function ServiceDetail(props) {
   const {
-    title = "Custom Web Application Development",
-    subTitle = "Our team specializes in building robust, scalable, and secure web applications tailored to your unique business needs. From initial concept to final deployment, we ensure a seamless development process that aligns with your goals.",
-    image = "https://www.thinkcompany.com/wp-content/uploads/2023/02/services-graphic-light-500x487.png",
-    i,
+    title,
+    subTitle ,
+    image,
+    i="/images/1.jpg",
   } = props;
 
   return (

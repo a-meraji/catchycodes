@@ -8,7 +8,7 @@ export default function AboutUs() {
   const isInView = useInView(ref, { once: true });
 
   return (
-       <div className="mt-40 mx-4 lg:mx-[10vw]">
+       <di id="about" className="mt-40 mx-4 lg:mx-[10vw]">
         <h1 className="lg:text-6xl text-3xl font-black leading-10 mb-4">
           We are built Differently & Exceptionally
         </h1>
@@ -57,6 +57,6 @@ export default function AboutUs() {
         </div>
       </ServiceAnimContainer>
       </div>
-    </div></div>
+    </div></di>
   );
 }

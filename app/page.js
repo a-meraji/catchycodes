@@ -15,9 +15,9 @@ export default function Home() {
       <Intro />
       <Us />
       <AutomateCarousel />
-      <Services />
+      <Services/>
       <AllServiceDetail />
-      <AboutUs />
+      <AboutUs/>
       <Footer />
       <ContactUs /> 
     </main>
