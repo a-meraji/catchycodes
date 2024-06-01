@@ -57,7 +57,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className={styles.main}>
+    <>
       <div className={styles.spacer}></div>
       <div ref={gallery} className={styles.gallery}>
         <Column images={[images[0], images[1], images[2]]} y={y}/>
@@ -66,7 +66,7 @@ export default function Home() {
         <Column images={[images[9], images[10], images[11]]} y={y4}/>
       </div>
       <div className={styles.spacer}></div>
-    </main>
+    </>
   )
 }
 
@@ -80,6 +80,8 @@ const Column = ({images, y}) => {
         images.map( (src, i) => {
           return <div key={i} className={styles.imageContainer}>
             <Image 
+            className={styles.img}
+            style={ {objectFit: "cover"}}
               src={`/images/parallex/${src}`}
               alt='image'
               fill

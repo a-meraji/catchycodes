@@ -2,7 +2,6 @@ import React from "react";
 import ServiceAnimContainer from "./ServiceAnimContainer";
 import Parallex from "./parallex";
 
-
 export default function Services() {
   return (
     <div className="my-20">
@@ -18,7 +17,6 @@ export default function Services() {
         </div>
         <Parallex />
       <div className="-mt-[92vh] mx-4 lg:px-[10vw]">
-
         <ServiceAnimContainer i={1}>
           <div className="lg:text-6xl text-3xl font-black leading-10">
             Think Company designs and builds digital tools that make work and

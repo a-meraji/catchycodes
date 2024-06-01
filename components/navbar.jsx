@@ -12,7 +12,7 @@ function Navbar() {
         animate={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 0.5 }}
         className={`flex orange-glass items-center justify-around rounded-2xl
-       py-2 px-4 w-[85vw] sm:w-[80vw] md:w-[75vw] lg:w-[50vw] 2xl:[45vw]`}
+       py-2 px-4 w-[75vw] sm:w-[65] md:w-[55] lg:w-[45vw] 2xl:[30vw]`}
       >
         {allNavBarIcon.map((ele, i) => (
           <NavBarIcon {...ele} key={i} />

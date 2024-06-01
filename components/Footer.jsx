@@ -5,8 +5,8 @@ import { FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa"
 export default function Footer() {
   return (
     <div className="bg-[#d17921d5]  mt-10 lg:mt-20">
-      <div className="footer-shadow-inner flex flex-col gap-2 lg:gap-0  items-center text-white">
-        <div className="flex flex-col pb-2  text-center  lg:flex-row lg:gap-24">
+      <div className="footer-shadow-inner flex flex-col gap-2 lg:gap-0 text-center items-center text-white">
+        <div className="hidden lg:flex pb-2  flex-row lg:gap-24">
           <div>
             <div className="lg:mt-10 !text-Gray100 font-14Bold">
               Contact With Us
@@ -48,6 +48,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <div className="lg:hidden py-2 text-sm"> All right reserved  &#169; 2024 </div>
       </div>
     </div>
   );
