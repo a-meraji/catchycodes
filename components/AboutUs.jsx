@@ -40,14 +40,14 @@ export default function AboutUs() {
       >
       <ServiceAnimContainer i={0}>
         <div className="flex flex-col items-center mb-8 md:mb-0 lg:mr-8">
-          <span className="text-5xl font-bold">23+</span>
+          <span className="text-5xl font-bold">6+</span>
           <span className="font-medium text-xl lg:text-2xl text-slate-600 mt-2">Software Development Expertise</span>
           <span className="font-medium text-lg lg:text-xl text-slate-600 text-center mt-2">
             {"We've successfully completed over 23 projects by utilizingcutting-edge technologies, ensuring effective and valuable solutions for our clients"}
           </span>
         </div>
         <div className="flex flex-col items-center lg:mt-10">
-          <span className="text-5xl font-bold">98%</span>
+          <span className="text-5xl font-bold">1oo%</span>
           <span className="font-medium text-xl lg:text-2xl text-slate-600 mt-2">Client Satisfaction Rate</span>
           <span className="font-medium text-lg lg:text-xl text-slate-600 text-center mt-2">
             We pride ourselves on delivering high-quality software solutions

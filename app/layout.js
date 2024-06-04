@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
+import { Toaster } from "@/components/ui/toaster";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         </div>
         {children}
+        <Toaster />
       </body>
     </html>
   );
