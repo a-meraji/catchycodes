@@ -12,49 +12,81 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 
-const data = [
+const questions = [
   {
-    goal: 400,
+    id: 1,
+    question: "What kind of service do you need?",
+    options: [
+      "Web Application Development",
+      "UX/UI Design",
+      "DevOps",
+      "API Development",
+    ],
   },
   {
-    goal: 300,
+    id: 2,
+    question: "What is the scope of your project?",
+    options: [
+      "Small (simple website or app)",
+      "Medium (website or app with several features)",
+      "Large (complex platform)",
+      "It needs to be checked",
+    ],
   },
   {
-    goal: 200,
+    id: 3,
+    question: "When do you need the project completed?",
+    options: [
+      "Within 1 month",
+      "1-3 months",
+      "3-6 months",
+      "Flexible with the timeline",
+    ],
   },
   {
-    goal: 300,
+    id: 4,
+    question: "How did you hear about us?",
+    options: ["Referral", "Social Media", "Search Engine", "Advertisement"],
   },
   {
-    goal: 200,
-  },
-  {
-    goal: 278,
-  },
-  {
-    goal: 189,
-  },
-  {
-    goal: 239,
-  },
-  {
-    goal: 300,
-  },
-  {
-    goal: 200,
-  },
-  {
-    goal: 278,
-  },
-  {
-    goal: 189,
-  },
-  {
-    goal: 349,
+    id: 5,
+    question: "Please provide your contact details",
+    isContactDetails: true,
   },
 ];
 
 export default function ContactUs() {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [answers, setAnswers] = useState({});
+  const [contactDetails, setContactDetails] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
+
+  const handleOptionClick = (option) => {
+    setAnswers((prev) => ({ ...prev, [currentQuestion]: option }));
+    if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      // Handle form submission here
+      console.log("Form submitted with answers:", {
+        ...answers,
+        contactDetails,
+      });
+    }
+  };
+
+  const handleContactDetailChange = (e) => {
+    const { name, value } = e.target;
+    setContactDetails((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleContactDetailsSubmit = () => {
+    console.log("Form submitted with answers:", { ...answers, contactDetails });
+    // Add your form submission logic here
+  };
+
   const [showContactUs, setShowContactUs] = useState(false);
   const ContactUsHandler = () => {
     setShowContactUs(!showContactUs);
@@ -64,11 +96,7 @@ export default function ContactUs() {
     "translate-y-0 scale-100 opacity-100",
     "-translate-y-24 scale-0 opacity-0"
   ).getClass();
-  const [goal, setGoal] = React.useState(350);
 
-  function onClick(adjustment) {
-    setGoal(Math.max(200, Math.min(400, goal + adjustment)));
-  }
   return (
     <Drawer>
       <DrawerTrigger asChild>
@@ -97,49 +125,69 @@ md:px-[25px]"
           Contact Us
         </Button>
       </DrawerTrigger>
-      <DrawerContent className="bg-white">
+      <DrawerContent className="backdrop-blur-md bg-white/30">
         <div className="mx-auto w-full max-w-sm">
-          <DrawerHeader>
-            <DrawerTitle>Move Goal</DrawerTitle>
-            <DrawerDescription>Set your daily activity goal.</DrawerDescription>
-          </DrawerHeader>
-          <div className="p-4 pb-0">
-            <div className="flex items-center justify-center space-x-2">
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8 shrink-0 rounded-full"
-                onClick={() => onClick(-10)}
-                disabled={goal <= 200}
-              >
-                <span className="sr-only">Decrease</span>
-              </Button>
-              <div className="flex-1 text-center">
-                <div className="text-7xl font-bold tracking-tighter">
-                  {goal}
+          <DrawerHeader></DrawerHeader>
+
+          <div className="max-w-lg mx-auto mb-8 p-6 bg-[#f386583a] rounded-lg shadow-md">
+            {currentQuestion < questions.length - 1 && (
+              <>
+                <h2 className="text-xl mb-4">
+                  {questions[currentQuestion].question}
+                </h2>
+                <div className="space-y-4">
+                  {questions[currentQuestion].options.map((option, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handleOptionClick(option)}
+                      className="w-full p-4 bg-[#bebebe] text-black rounded-lg hover:bg-[#ffab2d] focus:outline-none"
+                    >
+                      {option}
+                    </button>
+                  ))}
                 </div>
-                <div className="text-[0.70rem] uppercase text-muted-foreground">
-                  Calories/day
+              </>
+            )}
+            {questions[currentQuestion].isContactDetails && (
+              <>
+                <h2 className="text-xl mb-4">
+                  {questions[currentQuestion].question}
+                </h2>
+                <div className="space-y-4">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    value={contactDetails.name}
+                    onChange={handleContactDetailChange}
+                    className="w-full p-4 bg-[#bebebe] text-black rounded-lg"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    value={contactDetails.email}
+                    onChange={handleContactDetailChange}
+                    className="w-full p-4 bg-[#bebebe] text-black rounded-lg"
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Your Phone Number"
+                    value={contactDetails.phone}
+                    onChange={handleContactDetailChange}
+                    className="w-full p-4 bg-[#bebebe] text-black rounded-lg"
+                  />
+                  <button
+                    onClick={handleContactDetailsSubmit}
+                    className="w-full p-4 bg-[#ffab2d] text-black rounded-lg hover:bg-[#bebebe] focus:outline-none"
+                  >
+                    Submit
+                  </button>
                 </div>
-              </div>
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8 shrink-0 rounded-full"
-                onClick={() => onClick(10)}
-                disabled={goal >= 400}
-              >
-                <span className="sr-only">Increase</span>
-              </Button>
-            </div>
-            <div className="mt-3 h-[120px]"></div>
+              </>
+            )}
           </div>
-          <DrawerFooter>
-            <Button className="bg-blue-700 text-white">Submit</Button>
-            <DrawerClose asChild>
-              <Button variant="outline">Cancel</Button>
-            </DrawerClose>
-          </DrawerFooter>
         </div>
       </DrawerContent>
     </Drawer>
