@@ -11,6 +11,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { IoReturnDownBack } from "react-icons/io5";
 
 const questions = [
   {
@@ -125,14 +126,14 @@ md:px-[25px]"
           Contact Us
         </Button>
       </DrawerTrigger>
-      <DrawerContent className="backdrop-blur-md bg-white/30">
+      <DrawerContent className="backdrop-blur-md bg-white/90">
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader></DrawerHeader>
 
-          <div className="max-w-lg mx-auto mb-8 p-6 bg-[#f386583a] rounded-lg shadow-md">
+          <div className="max-w-lg mx-auto mb-8 py-6 px-10 bg-[#fcddb9] rounded-lg shadow-md">
             {currentQuestion < questions.length - 1 && (
               <>
-                <h2 className="text-xl mb-4">
+                <h2 className="text-xl font-bold mb-4">
                   {questions[currentQuestion].question}
                 </h2>
                 <div className="space-y-4">
@@ -140,7 +141,7 @@ md:px-[25px]"
                     <button
                       key={index}
                       onClick={() => handleOptionClick(option)}
-                      className="w-full p-4 bg-[#bebebe] text-black rounded-lg hover:bg-[#ffab2d] focus:outline-none"
+                      className={`w-full p-4 ${answers[currentQuestion]==option? "bg-blue-100" :"bg-white"} rounded-lg hover:bg-[#ffab2d] hover:text-white transition-colors focus:outline-none`}
                     >
                       {option}
                     </button>
@@ -187,6 +188,11 @@ md:px-[25px]"
                 </div>
               </>
             )}
+           {currentQuestion > 0 && <div className="mt-4">
+              <button onClick={()=>{setCurrentQuestion(pre=>pre-1)}} className="px-4 py-2 flex flex-col hover:text-accent transition-colors">
+                <IoReturnDownBack className="w-7 h-7" />
+              </button>
+          </div>}
           </div>
         </div>
       </DrawerContent>
