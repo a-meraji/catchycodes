@@ -25,7 +25,7 @@ export default function Footer() {
               <div
                 className="cursor-pointer"
                 onClick={() => {
-                  window.open("https://t.me/betatik", "_blank");
+                  window.open("https://t.me/sepehrdesdgh", "_blank");
                 }}
               >
                 <FaTelegram className="w-8 h-8"/>
